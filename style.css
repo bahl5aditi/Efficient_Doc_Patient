@@ -1,0 +1,156 @@
+
+#frm{
+    /* border: solid grey 1px;  */
+    border: solid white 2px;
+    width: 20%;
+    border-radius: 5px;
+    margin: 100px auto;
+    /* background :rgb(197, 195, 195);  */
+    padding: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 0.8cm;
+}
+#btn{
+    color: #fff;
+    background: #337ab7; 
+    
+    padding : 5 px;
+    margin-left: 60%;
+}
+.button{
+    background-color:#4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    /*border-radius: 10px;*/
+    cursor: pointer;
+    }
+.button2 {background-color: #f44336;}
+.button3 {
+    align-content: center;
+    background-color: green;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#00aaff;
+    position: fixed;
+    top: 0;
+    right:0;
+    width: 40%;
+  
+  
+  }
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  .bg {
+    /* The image used */
+    background-image: url("brandon-holmes-199535-unsplash.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+  }
+  body, html {
+    height: 100%;
+    margin: 0;
+    
+  }
+ .bwg {
+    background-color: #ffffff;
+    height: 0%;
+  }
+  div.a1{
+      /* font-family: 'Courier New', Courier, monospace; */
+      /* margin-left:25%;
+      margin-right:40%; */
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color:#fff;
+      letter-spacing: 4px;
+      overflow: hidden;
+      background:linear-gradient(90deg,#000,#fff,#000);
+      background-repeat: no-repeat;
+      background-size: 50%;
+      animation: animate 4s linear infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+
+@keyframes animate{
+    0%
+    {
+          background-position: -500%;
+    }
+    100%
+    {
+        background-position: 500%;
+    }
+}
+
+  h3.a1{
+      color: white;
+  }
+
+  .example_e {
+    border: none;
+    background: #404040;
+    color: #ffffff !important;
+    font-weight: 100;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-block;
+    font-size: 0.7cm;
+    }
+    
+    .example_e:hover {
+    color: #404040 !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: white;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
+    }
+
+    .button_cont {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        }
+
+div.a2{
+    font-size: 0.5cm;
+    color: white;
+}
+
+a.l1{
+    color: white;
+}
+div.a3{
+    font-size: 0.7cm;
+    color: white;
+    text-align: center;
+}
+

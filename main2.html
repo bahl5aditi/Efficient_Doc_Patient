@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#00aaff;
+  position: fixed;
+  top: 0;
+  right:0;
+  width: 40%;
+
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+button.b1 {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #00aaff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+button.b2 {
+  padding: 15px 50px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #00aaff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #666}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+div.a1{
+  position: absolute;
+  left: 5%;
+  width: 200px;
+  height: 100px;
+  
+}
+div.a2{
+  position: absolute;
+  left: 40%;
+  width: 200px;
+  height: 100px;
+  
+}
+div.a3{
+  position: absolute;
+  right: 5%;
+  width: 200px;
+  height: 100px;
+  
+}
+div.a4{
+  position: absolute;
+  left:0;
+  
+}
+a.l1{
+    color: white;
+}
+</style>
+</head>
+
+<body>
+  
+
+  
+
+<h2 class="w3-left">EFFICIENT DOCTOR PATIENT</h2>
+
+<div class="w3-content w3-section" style="max-width:2000px">
+  <img class="mySlides" src="slider-image1.jpg" style="width:100%">
+  <img class="mySlides" src="slider-image2.jpg" style="width:100%">
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+</script>
+<ul>
+    <li><a class="active" href="main2.html">Home</a></li>
+    <li><a href="hello.html">News</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <div class="a1"><button class="button b1"><a class="l1" href="patient_login.html">PATIENT Login</a></button></div>
+  <div class="a2"><button class="button b1"><a class="l1" href="doctor_login.html">DOCTOR Login</a></button></div>
+  <div class="a3"><button class="button b2"><a class="l1" href="administrator_login.html">ADMIN <br>Login</a></button></div>
+  
+  
+  </body>
+</html>

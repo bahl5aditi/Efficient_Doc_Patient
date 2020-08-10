@@ -1,0 +1,297 @@
+﻿<html>
+<head>
+<style>
+.news {
+  box-shadow: inset 0 -15px 30px rgba(0,0,0,0.4), 0 5px 10px rgba(0,0,0,0.5);
+  width: 700px;
+  height: 50px;
+   margin-left:20%; 
+  
+  overflow: hidden;
+  border-radius: 4px;
+  padding: 3px;
+  -webkit-user-select: none
+} 
+
+.backg {
+    /* The image used */
+    background-image: url("brandon-holmes-199535-unsplash.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+  }
+
+.news span {
+  float: left;
+  color: #fff;
+  padding: 6px;
+  position: relative;
+  top: 1%;
+  border-radius: 4px;
+  box-shadow: inset 0 -15px 30px rgba(0,0,0,0.4);
+  font: 16px 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+  cursor: pointer
+}
+
+.news ul {
+  float: left;
+  padding-left: 20px;
+  animation: ticker 10s cubic-bezier(1, 0, .5, 0) infinite;
+  -webkit-user-select: none
+}
+
+.news ul li {line-height: 30px; list-style: none }
+
+.news ul li a {
+  color: #fff;
+  text-decoration: none;
+  font: 14px Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none
+}
+
+.blue { background: #347fd0 }
+.blue span { background: #2c66be }
+.red { background: #d23435 }
+.red span { background: #c22b2c }
+.green { background: rgb(75, 128, 73) }
+.green span { background: #547d52 }
+/* .magenta { background: #b63ace } */
+.magenta { background: #e06d2b }
+.magenta span { background: #b4650b }
+/* .magenta span { background: #842696 } */
+img.frame {
+  border:solid 2px;
+  border-bottom-color:#ffe;
+  border-left-color:#eed;
+  border-right-color:#eed;
+  border-top-color:#ccb;
+  max-height:100%;
+  max-width:100%;
+}
+
+.frame {
+  background-color:#ddc;
+  border:solid 5vmin #eee;
+  border-bottom-color:#fff;
+  border-left-color:#eee;
+  border-radius:2px;
+  border-right-color:#eee;
+  border-top-color:#ddd;
+  box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+  box-sizing:border-box;
+  display:inline-block;
+  margin-top:5%;
+  margin-left:50%;
+  height:50vh;
+  padding:8vmin;
+  position:relative;
+  text-align:center;
+  color:blue;
+  &:before {
+    border-radius:2px;
+    bottom:-2vmin;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
+    content:"";
+    left:-2vmin;
+    position:absolute;
+    right:-2vmin;
+    top:-2vmin;
+  }
+  &:after {
+    border-radius:2px;
+    bottom:-2.5vmin;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+    content:"";
+    left:5vmin;
+    position:absolute;
+    right:-2.5vmin;
+    top:-2.5vmin;
+  }
+}
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+.enjoy-css {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  font: normal normal 5 20px/normal "Aldrich", Helvetica, sans-serif;
+  color: rgb(32, 44, 45);
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: 0 1px 0 rgb(128,141,147) , -1px 0 0 rgb(205,210,213) , -1px 2px 0 rgb(128,141,147) , -2px 1px 0 rgb(205,210,213) , -2px 3px 0 rgb(128,141,147) , -3px 2px 0 rgb(205,210,213) , -3px 4px 0 rgb(128,141,147) , -4px 3px 0 rgb(205,210,213) , -4px 5px 0 rgb(128,141,147) , -5px 4px 0 rgb(205,210,213) , -5px 6px 0 rgb(128,141,147) , -6px 5px 0 rgb(205,210,213) , -6px 7px 0 rgb(128,141,147) , -7px 6px 0 rgb(205,210,213) , -7px 8px 0 rgb(128,141,147) , -8px 7px 0 rgb(205,210,213) ;
+}
+.about{
+width:40%;
+margin-top:5%;
+}
+
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 20s slider infinite;
+    transition-delay:-2s;	
+}
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@keyframes ticker {
+	0%   {margin-top: 0}
+	25%  {margin-top: -30px}
+	50%  {margin-top: -60px}
+	75%  {margin-top: -90px}
+	100% {margin-top: 0}
+}
+
+div.a1{
+      /* font-family: 'Courier New', Courier, monospace; */
+      /* margin-left:25%;
+      margin-right:40%; */
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color:#fff;
+      letter-spacing: 4px;
+      overflow: hidden;
+      background:linear-gradient(90deg,#000,#fff,#000);
+      background-repeat: no-repeat;
+      background-size: 50%;
+      animation: animate 4s linear infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+  @keyframes animate{
+    0%
+    {
+          background-position: -500%;
+    }
+    100%
+    {
+        background-position: 500%;
+    }
+}
+
+  .n {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#00aaff;
+    position: fixed;
+    top: 0;
+    right:0;
+    width: 40%;
+  
+  
+  }
+  .m {
+    float: left;
+  }
+  
+  .m a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .m a:hover {
+    background-color: #111;
+  }
+
+
+</style>
+</head>
+<body class="backg">
+    <div class="a1"><h2>EFFICIENT DOCTOR PATIENT</h2></div>
+    <ul class="n">
+        <li class="m"><a class="active" href="main2.html">Home</a></li>
+        <li class="m"><a href="hello.html">News</a></li>
+        <li class="m"><a href="contact.html">Contact</a></li>
+        <li class="m"><a href="about.html">About</a></li>
+        </ul>
+    <br><br><br><br><br><br><br><br>
+<div class="news1">
+<div class="news red">
+  
+	<span>Latest News</span>
+	<ul>
+		<li><a href="#">Hospital Doctors went on camp to Africa to help blind kids</a></li>
+		<li><a href="#">Malnutrition will be the biggest problem till 2021</a></li>
+		<li><a href="#">Get the vaccinations for Swine Flu as its spreading rapidly</a></li>
+		<li><a href="#">A new hospital for pets will be opened in 2020</a></li>
+	</ul>
+</div>
+
+<div class="news blue">
+	<span>Latest News</span>
+	<ul>
+		<li><a href="#">Hospital Doctors went on camp to Africa to help blind kids</a></li>
+		<li><a href="#">Malnutrition will be the biggest problem till 2021</a></li>
+		<li><a href="#">Get the vaccinations for Swine Flu as its spreading rapidly</a></li>
+		<li><a href="#">A new hospital for pets will be opened in 2020</a></li>
+	</ul>
+</div>
+
+<div class="news green">
+	<span>Latest News</span>
+	<ul>
+		<li><a href="#">Hospital Doctors went on camp to Africa to help blind kids</a></li>
+		<li><a href="#">Malnutrition will be the biggest problem till 2021</a></li>
+		<li><a href="#">Get the vaccinations for Swine Flu as its spreading rapidly</a></li>
+		<li><a href="#">A new hospital for pets will be opened in 2020</a></li>
+	</ul>
+</div>
+
+<div class="news magenta">
+	<span>Latest News</span>
+	<ul>
+		<li><a href="#">Hospital Doctors went on camp to Africa to help blind kids</a></li>
+		<li><a href="#">Malnutrition will be the biggest problem till 2021</a></li>
+		<li><a href="#">Get the vaccinations for Swine Flu as its spreading rapidly</a></li>
+		<li><a href="#">A new hospital for pets will be opened in 2020</a></li>
+	</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
